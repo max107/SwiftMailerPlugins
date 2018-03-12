@@ -1,0 +1,16 @@
+{
+    "name": "max107/swiftmailer-plugins",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Max107\\SwiftMailerPlugins\\": "./src"
+        }
+    },
+    "require": {
+        "php": "^7.1",
+        "swiftmailer/swiftmailer": "~6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
+    }
+}

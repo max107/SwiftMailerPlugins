@@ -1,0 +1,18 @@
+<phpunit colors="true" strict="true" stopOnError="false" backupGlobals="false"
+         bootstrap="vendor/autoload.php">
+    <php>
+        <ini name="error_reporting" value="32767"/>
+    </php>
+
+    <testsuites>
+        <testsuite name="all">
+            <directory>Tests/</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">./src/</directory>
+        </whitelist>
+    </filter>
+</phpunit>
