@@ -2,13 +2,6 @@
 
 declare(strict_types=1);
 
-/*
- * Studio 107 (c) 2018 Maxim Falaleev
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
 namespace Max107\SwiftMailerPlugins;
 
 use Swift_Events_SendEvent;
@@ -64,9 +57,7 @@ class DefaultSenderPlugin implements Swift_Events_SendListener
     }
 
     /**
-     * Invoked immediately before the Message is sent.
-     *
-     * @param Swift_Events_SendEvent $evt
+     * {@inheritdoc}
      */
     public function beforeSendPerformed(Swift_Events_SendEvent $evt)
     {
@@ -86,9 +77,7 @@ class DefaultSenderPlugin implements Swift_Events_SendListener
     }
 
     /**
-     * Invoked immediately after the Message is sent.
-     *
-     * @param Swift_Events_SendEvent $evt
+     * {@inheritdoc}
      */
     public function sendPerformed(Swift_Events_SendEvent $evt)
     {
